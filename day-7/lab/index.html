@@ -7,7 +7,14 @@
   </head>
   <body>
     <h1>Smart Billing</h1>
-
+    <label for="quantity">Enter Quantity</label>
+    <input type="numbers" name="quantity" id="quantity" min="1" />
+    <button type="button" id="billButton">calculate bill</button>
+    <p id="output"></p>
+    <label for="marks">Enter Marks</label>
+    <input type="number" name="marks" id="marks" min="0" max="100" />
+    <button type="button" id="gradeButton">check grade</button>
+    <p id="gradeOutput"></p>
     <script defer src="script.js"></script>
   </body>
 </html>
