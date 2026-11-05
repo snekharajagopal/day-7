@@ -1,0 +1,44 @@
+ Part A: Warm-up Quiz 
+
+1.  Which keyword declares a variable that cannot be reassigned?
+  (c) const  
+2. What does typeof "5" return?
+ (b) string   
+3. Which is a valid variable name?
+  (c) myName 
+4. What is the result of "5" + 2?
+ (b) "52"  
+5. What is the result of "5" - 2?
+(a) 3 
+6. Which operator checks both value and type?
+  (c) ===   
+7. What is 7 % 3?
+ (b) 1  
+8. What type of value does prompt() return?
+   (c) string 
+9. Which of these is falsy?
+  (c) 0 
+10. What is 2 ** 3?
+ (b) 8  
+11. What does typeof null return?
+(c) object 
+12. Which loop always runs at least once?
+  (c) do...while  
+13. What does break do inside a loop?
+ (b) Leaves the loop completely   
+14. What does continue do inside a loop?
+ (b) Skips the rest of this round and goes to the next 
+15. Which statement writes a message to the Console?
+ (c) console.log() 
+16. What is x after: let x = 5; x += 3;
+  (c) 8  
+17. What does condition ? a : b do?
+  (b) Returns a if the condition is true, otherwise b   
+18. Which loop prints 1 2 3?
+
+ (b) for (let i = 1; i <= 3; i++)  
+
+19. Where is a script tag with src normally placed?
+ (b) Just before the closing body tag   
+20. What is NaN?
+ (b) A special number value meaning Not a Number   
