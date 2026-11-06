@@ -1,14 +1,17 @@
 Q1. What is printed?
    console.log(add(2, 3)); function add(a, b) { return a + b; }
 
-   Prediction:
-   Output:
+   Prediction: 5
+   Reason:Function declarations can be called before their definition
+   
 
 
 Q2. What are the two results?
     const f = n => n * 2; console.log(f(4), f("3"));
 
-    Prediction:
+    Prediction: 8 6
+    Reason: f(4) → 4 * 2 → 8.
+            f("3") → JavaScript converts the numeric string "3" into the number 3 for multiplication = 6.
 
 Q3. What are the two results?
     const a = [1, 2, 3];
@@ -16,43 +19,53 @@ Q3. What are the two results?
     b.push(4);
     console.log(a.length, a === b);
 
-    Prediction:
+    Prediction: 4 ,true
+    Reason: b = a does not create a new array and both refer to the same array.
+      push(4) changes that array. it length become 4.
+
 
 Q4. What is printed?
     console.log([10, 9, 100, 1].sort());
 
-    Prediction:
+    Prediction:[1, 10, 100, 9]
+    Reason: sort() compares value as strings.
 
 Q5. What is printed?
     console.log([1, 2, 3, 4].map(n => n * n).filter(n => n > 4));
 
-    Prediction:
+    Prediction:[9, 16]
+    Reason:  first map squares number and filter keeps number greater than 4.
 
 Q6. What is printed?
     console.log([1, 2, 3].reduce((s, n) => s + n));
 
-    Prediction:
+    Prediction:6
+    Reason: first item become 1 as initials, sot add 2 become 3 , add 3 become 6
 
 Q7. What are o and c?
     const o = { a: 1 };
     const c = { ...o, a: 2, b: 3 };
     console.log(o, c);
 
-    Prediction:
+    Prediction: { a: 1 } { a: 2, b: 3 }
+    Reason: a:2 comes afterwards, so it ovewrites, then b:3 is added, original o is unchanged.
 
 Q8. What are the three results?
     console.log(typeof [], Array.isArray([]), [1] === [1]);
 
-    Prediction:
+    Prediction:object true false
+    Reason: typeof is object, array is true, 1==1 is false, because two different arrays.
 
 Q9. What are the two results?
    let x = 1;
    function f() { let x = 2; return x; }
    console.log(f(), x);
 
-   Prediction:
+   Prediction:2 1
+   Reason:x is separate variable in function, it does not change the x
 
 Q10. What text is printed?
      console.log(JSON.stringify({ a: undefined, b: () => 1, c: NaN, d: "x" }));
 
-     Prediction:
+     Prediction: {"c":null,"d":"x"}
+     Reason: undefined, function property is skipped, nan become null, x remain unchanged.
