@@ -1,0 +1,74 @@
+Day 7 Bug Hunt Notes
+
+Bug 1:
+Problem: Missing closing parenthesis in console.log("Total is " + total.toFixed(2);
+Error type: SyntaxError.
+Fix: Added the missing closing parenthesis.
+
+Bug 2:
+Problem: Extra semicolon after the for loop for (...; i++);
+
+Fix: Removed the semicolon.
+
+Bug 3:
+Problem: Used i outside its block.console.log(i)
+Error type: ReferenceError.
+Fix: Moved console.log(i) inside the loop.
+
+Bug 4:
+Problem: While loop did not update count.
+Behaviour: Infinite loop.
+Fix: Added count++.
+
+Bug 5:
+Problem: grade was not declared.switch (grade)
+Error type: ReferenceError.
+Fix: Asked for grade using prompt().
+
+Bug 6:
+Problem: missign break; after case:A
+         so, it goes to next case.
+Fix: Add break;
+
+Bug 7:
+Problem: defualt, typo error
+
+Fix: Removed the semicolon.
+
+Bug 8:
+Problem: age>17 && <60, here second comparison has no variable.
+
+Fix:  Added age>17 && age<60
+
+Bug 9:
+Problem: Math.Random() , here random start capital letter, no method name
+
+Fix: Math.random()
+
+Bug 10:
+Problem: let 2ndName, variable starts with a digit. 
+Fix: let secondName
+
+Bug 11:
+Problem: let user='Asha"; here quotation marks are not same
+Fix: use correct quotation mark user="Asha"
+
+Bug 12:
+Problem: PI = 3.14159, here reassigning constant value
+Fix:we have use constant
+
+Bug 14:
+problem: quantity=3 in the condition, here there is assignment instead of comparision.
+Fix:quantity===3
+
+Bug 15:
+problem: Price here P should be small letter
+Fix: Price
+
+Bug 16:
+Problem: price*quantity-discount here subtracts0.1
+fix: subtract amount +discount
+
+Bug17:
+Problem: prompt()age is string, we should change into number
+fix: convert it into Number(prompt())

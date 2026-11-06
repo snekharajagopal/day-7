@@ -1,0 +1,95 @@
+Q1. What is printed?
+    console.log(5 + "5", 5 - "5")
+
+    Prediction: (55, o) 
+    Reason: 5 + "5" is string concatenation so, js joins the string and become "55". 5 - "5" this operators do calculation as subtraction. so the result is 0.
+     Output: expected prediction.
+
+Q2. What is a?
+    let a = 5;
+    a++;
+    a *= 2;
+    console.log(a);
+
+    Prediction:  a=12
+    Reason:first a increments it becomes 6, then a *2 and store in a, so 6*2=12, atlast, a =12.
+     Output: expected prediction.
+
+Q3. What are the four types?
+    console.log(typeof 3.5, typeof "3.5", typeof true, typeof undefined);
+
+    Prediction:  number, string , boolean , undefined.
+     Output: expected prediction.
+
+Q4. Which letter is printed?
+    let x = 10;
+    if (x > 5 && x < 8) console.log("A");
+    else if (x > 5) console.log("B");
+    else console.log("C");
+
+    Prediction: it print "B"
+    Reason:  first condition: 10>5 true  and 10<8 is false, because there is and, true and false =false
+             second condition: 10>5 is true, so the output is B.
+     Output: expected prediction.
+
+Q5. What is printed?
+    for (let i = 0; i < 3; i++) console.log(i * 2);
+
+    Prediction: 0
+                2
+                4
+    Reason: iteration i=0, 0<3, it prints 0*2=0
+            iteration i=1, 1<3, it prints 1*2=2
+            iteration  i=2, 2<3, it prints 2*2=4
+            iteration i=3, 3<3 condition fails, loop stopped.    
+     Output: expected prediction.   
+
+Q6. What is printed?
+    let n = 3; while (n > 0) { console.log(n); n--; }
+
+    PredictionL: 3
+                 2
+                 1
+    Reason: iteration n=3, 3>0, it prints n=3, n decrement 2.
+            iteration n=2, 2>0, it prints n=2, n decrement 1
+            iteration n=1, 1>0, it prints n=1, n decrement 0.
+            iteration n=0, 0>0, condition fails, loop stops.
+     Output: expected prediction.
+
+Q7. What are the three results?
+    console.log("10" > "9", 10 > 9, "10" > 9);
+
+    Prediction:  false, true,  true
+    Reason:  "10" > "9" this string compares character by character, so it become false , 1<9
+              10 > 9, "10" > 9, these are numeric comparision so, it becomes true.
+     Output: expected prediction.
+
+Q8. What are the four results?
+    console.log(Boolean(""), Boolean(" "), Boolean(0), Boolean("0"));
+
+    Prediction: false, true, false, true
+    Reason: Boolean(""),  Boolean(0) these are falsy string and  0 are falsy.
+            Boolean("0"), Boolean(" ") these are  non empty string. so becomes true.
+     Output: expected prediction.
+
+Q9. What is printed?
+    switch (2) {
+       case 1: console.log("one");
+       case 2: console.log("two");
+       case 3: console.log("three"); break;
+       default: console.log("other");
+    }
+
+    Prediction: two
+                three
+    Reason:  it prints case 2, as there is no break, it again print three.then break
+    Output: expected prediction.
+
+Q10. What is printed?
+     let s = "abc";
+     s[0] = "X";
+     console.log(s, s.toUpperCase());
+
+     Prediction: abc, abc
+     Reason: strings are immutable. strigs cannot be changed by assigning character. so s[0] = "X"; it fails.
+     Output: expected prediction.

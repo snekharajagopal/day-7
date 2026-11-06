@@ -1,0 +1,114 @@
+Bug 1. 
+The message always says adult.
+let age = 15; if (age = 18) { console.log("adult"); }
+
+Bug: age =18, here instead of comparing age with 18, we are assigning a value to variable, as it always says adult.= assigns a value. === compares values.
+Correct code 
+let age = 15;
+if (age === 18) { console.log("adult"); }
+
+
+
+Bug 2.
+ The program stops with an error.
+const total = 0;
+for (let i = 1; i <= 3; i++) { total += i; }
+
+Bug:  atlast we are incrementing total, const value should not be changes, instead of const, we can use let total=0;
+correct code:
+let total = 0;
+
+for (let i = 1; i <= 3; i++) {
+  total += i;
+}
+
+console.log(total);
+
+
+
+Bug 3. 
+Adding 5 gives a strange answer.
+let age = prompt("Your age?");   // user types 20
+console.log(age + 5);
+
+Bug:  prompt returns string. so if we add string with number, it just join or concatenates, it will not do addition operation. 
+      so we have to change the string into number ()
+correct code:
+let age = Number(prompt("Your age?"));
+console.log(age + 5);
+
+
+
+Bug 4. 
+The loop prints nothing useful and then an error.
+for (let i = 1; i <= 3; i++);
+{ console.log(i); }
+ 
+Bug: for (let i = 1; i <= 3; i++); , in this line there is semicolon; at the end, the syntax is wrong , loops does not have ;.
+     The semicolon after the for loop ends the loop immediately.then i is not available.
+correct code:
+for (let i = 1; i <= 3; i++) {
+  console.log(i);
+}
+
+
+
+Bug 5.
+The browser tab freezes.
+let n = 5;
+while (n > 0) { console.log(n); }
+
+Bug: The loop never changes n, so its condition remains true forever and it creates infinite loop.
+correct code: 
+let n = 5;
+
+while (n > 0) {
+  console.log(n);
+  n--;
+}
+
+
+
+Bug 6. 
+Tuesday is printed together with Monday.
+let day = 1;
+switch (day) {
+  case 1: console.log("Monday");
+  case 2: console.log("Tuesday");
+}
+
+Bug:  Missing break after case 1 so it also go  into case 2.
+correct code :
+let day = 1;
+
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+}
+
+
+
+Bug 7.
+The first line gives an error.
+let 1stName = "Asha";
+console.log(1stName);
+
+Bug:  variable name cannot start with a number.
+correct code: 
+let firstName = "Asha";
+console.log(firstName);
+
+
+
+
+Bug 8.
+Nothing is printed and the Console is red.
+consle.log("Hello");
+ 
+Bug: the spelling of console is wrong
+correct code:
+console.log("Hello");
