@@ -1,5 +1,5 @@
 console.log("Multiplication table");
-const number = Number(prompt("Enter a number:"));
+const number = 7
 
 if (Number.isNaN(number)) {
   console.log("Please enter a valid number.");
