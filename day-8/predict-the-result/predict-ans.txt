@@ -1,0 +1,58 @@
+Q1. What is printed?
+   console.log(add(2, 3)); function add(a, b) { return a + b; }
+
+   Prediction:
+   Output:
+
+
+Q2. What are the two results?
+    const f = n => n * 2; console.log(f(4), f("3"));
+
+    Prediction:
+
+Q3. What are the two results?
+    const a = [1, 2, 3];
+    const b = a;
+    b.push(4);
+    console.log(a.length, a === b);
+
+    Prediction:
+
+Q4. What is printed?
+    console.log([10, 9, 100, 1].sort());
+
+    Prediction:
+
+Q5. What is printed?
+    console.log([1, 2, 3, 4].map(n => n * n).filter(n => n > 4));
+
+    Prediction:
+
+Q6. What is printed?
+    console.log([1, 2, 3].reduce((s, n) => s + n));
+
+    Prediction:
+
+Q7. What are o and c?
+    const o = { a: 1 };
+    const c = { ...o, a: 2, b: 3 };
+    console.log(o, c);
+
+    Prediction:
+
+Q8. What are the three results?
+    console.log(typeof [], Array.isArray([]), [1] === [1]);
+
+    Prediction:
+
+Q9. What are the two results?
+   let x = 1;
+   function f() { let x = 2; return x; }
+   console.log(f(), x);
+
+   Prediction:
+
+Q10. What text is printed?
+     console.log(JSON.stringify({ a: undefined, b: () => 1, c: NaN, d: "x" }));
+
+     Prediction:

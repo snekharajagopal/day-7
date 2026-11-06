@@ -1,0 +1,61 @@
+ Part A: Warm-up Quiz 
+
+1. Which keyword defines a function?
+ (b) function   
+
+2. What does return do?
+ (b) Sends a value back and stops the function
+
+3. What does f(4) give if const f = n => n * 2;
+ (b) 8  
+
+4. Which scope do let and const variables have?
+ (c) Block 
+
+5. What is the index of the first item in an array?
+  (b) 0 
+
+6. Which method adds an item at the end of an array?
+(a) push()  
+
+7. What is [4, 5, 6].length?
+ (b) 3
+
+8. Which method returns a new array with every item transformed?
+ (c) map()   
+
+9. Which method keeps only the items that pass a test?
+  (b) filter() 
+
+10. What does reduce() return?
+  (b) A single value   
+
+11. How do you sort numbers in ascending order?
+  (b) arr.sort((a, b) => a - b)  
+
+12. How do you read the name property of the object student?
+  (b) student.name
+
+13. Which gives an array of all the keys of an object?
+(a) Object.keys(obj)  
+
+14. What does JSON.stringify do?
+  (b) Turns an object into JSON text  
+
+15. What does JSON.parse do?
+  (b) Turns JSON text into an object  
+
+16. Which of these is valid JSON?
+  (b) {"name": "Asha"}  
+
+17. const arr = [1, 2]; arr.push(3); What happens?
+  (b) arr becomes [1, 2, 3] 
+
+18. What does [...a] do for an array a?
+ (b) Makes a copy of a 
+
+19. Which method returns the first item that matches a test?
+(b) find()  
+
+20. What is a callback?
+ (b) A function passed as an argument to another function 

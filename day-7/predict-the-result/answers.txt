@@ -47,7 +47,7 @@ Q5. What is printed?
 Q6. What is printed?
     let n = 3; while (n > 0) { console.log(n); n--; }
 
-    PredictionL: 3
+    Prediction: 3
                  2
                  1
     Reason: iteration n=3, 3>0, it prints n=3, n decrement 2.
