@@ -1,0 +1,127 @@
+Bug 1
+{ name: "Book", price: 120, qty: 2 }
+{ name: "Bag", price: 750, qty: 1 }, 
+here missing comma in cart array, it is syntax error, it cannot parse without comma.
+
+correct fix:
+{ name: "Book", price: 120, qty: 2 },
+{ name: "Bag", price: 750, qty: 1 },
+
+Bug 2
+for (let i = 0; i <= items.length; i++)
+here suppose array has 3 items, length allow i=3, which is no item.
+
+correct fix:
+for (let i = 0; i <= items.length; i++)
+
+Bug3
+for (let i = 0; i < items.length; i++)
+here item refer entire array, so items[i] refers current product object
+
+correct fix:
+items[i].price * items[i].qty
+
+
+Bug 4
+console.log(total);
+console.log display only value, return send the value back to place that function is called.
+
+correct fix:
+return total;
+
+
+Bug 5
+let result = calculateTotal(cart);
+console.log("Total: " + result.toFixed(2));
+
+this bug is continues from bug 4, if result not return, it is undefined
+
+correct fix:
+let result = calculateTotal(cart);
+console.log("Total: " + result.toFixed(2));
+
+Bug 6
+const names = cart.map(item => {
+    item.name;
+});
+map needs callback to return value, it go into new array.
+
+correct fix
+const names = cart.map(item => {
+    return item.name;
+});
+
+Bug 7:
+const costly = cart.filter(item => item.price = 100);
+here it should check whether one value is greater that other.
+
+correct fix
+const costly = cart.filter(item => item.price > 100);
+
+
+Bug 8
+const sum = cart.reduce((s, item) => s + item.price);
+it does not give initial value because pricce only adds, not mutliply by quantity.
+
+correct fix:
+const sum = cart.reduce(
+    (s, item) => s + item.price * item.qty,
+    0
+);
+
+
+Bug 9
+const sorted = cart.sort((a, b) => a.price > b.price);
+   it should return negative or zero or positive number.
+
+correct fix:
+const sorted = [...cart].sort((a, b) => a.price - b.price);
+
+Bug 10
+const bag = cart.find(item => item.name === "bag");
+here before the stored name is Bag, where b is capital.
+
+
+Bug 11
+const copy = cart;
+it refers same array, spread operator create new array
+
+correct fix:
+const copy = [...cart];
+
+
+But 12
+const user = {
+    name: "Asha",
+    greet: () => console.log("Hi " + this.name)
+};
+arrow function does not get own this from object.
+
+correct fix:
+const user = {
+    name: "Asha",
+
+    greet() {
+        console.log("Hi " + this.name);
+    }
+};
+
+Bug 13
+user.greet; here function is not called
+correct: user.greet();
+
+
+Bug 14
+const data = JSON.parse("{name: 'Asha', age: 20}");
+here json should use double quotes for property and string
+
+correctcode:
+const data = JSON.parse('{"name": "Asha", "age": 20}');
+
+
+Bug 15
+console.log(json.length()); here length is property , so it should not have ()
+
+correct: console.log(json.length);
+
+
